@@ -1,0 +1,79 @@
+/* Image Watermark Styles */
+.property-image-container-gna,
+.property-image-container,
+.hero-background-img,
+.trust-image img,
+.property-detail-image img {
+  position: relative;
+}
+
+/* Add watermark overlay to all images */
+.property-image-container-gna::after,
+.property-image-container::after,
+.hero-image-section::after,
+.trust-image::after,
+.property-detail-image::after {
+  content: '© Sorrel Properties';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Center watermark for hero */
+.hero-image-section::after {
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+/* Larger watermark for detail page */
+.property-detail-image::after {
+  bottom: 20px;
+  right: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/* Disable text selection */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Allow selection only in input fields */
+input, textarea, .admin-dashboard, .admin-login-page {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* Prevent image saving */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  pointer-events: auto;
+}
+
+/* Add cursor pointer only for interactive elements */
+a, button, .btn, .nav-link, .property-card-gna {
+  cursor: pointer;
+}
+
+/* Protect logo */
+.nav-logo-img, .footer-logo-img {
+  pointer-events: none;
+}

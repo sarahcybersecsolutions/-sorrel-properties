@@ -1,0 +1,188 @@
+.stats-counter-section {
+  position: relative;
+  padding: 120px 0;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  overflow: hidden;
+}
+
+.stats-counter-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+}
+
+.floating-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  animation: float-shape 20s infinite ease-in-out;
+  animation-delay: var(--delay);
+}
+
+.shape:nth-child(1) { top: 10%; left: 10%; }
+.shape:nth-child(2) { top: 60%; left: 80%; }
+.shape:nth-child(3) { top: 80%; left: 20%; width: 150px; height: 150px; }
+.shape:nth-child(4) { top: 30%; left: 60%; width: 80px; height: 80px; }
+.shape:nth-child(5) { top: 70%; left: 50%; }
+
+@keyframes float-shape {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(30px, -30px) rotate(90deg); }
+  50% { transform: translate(0, -60px) rotate(180deg); }
+  75% { transform: translate(-30px, -30px) rotate(270deg); }
+}
+
+.stats-counter-header {
+  text-align: center;
+  margin-bottom: 80px;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.stats-counter-header.animate-in {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.section-badge-dark {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+  color: #60a5fa;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.stats-counter-header h2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stats-counter-header p {
+  font-size: 1.25rem;
+  color: #94a3b8;
+}
+
+.stats-counter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.stat-counter-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 50px 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.stat-counter-card.animate-in {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: var(--delay);
+}
+
+.stat-counter-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.stat-icon-wrapper {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  color: white;
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+}
+
+.stat-value-wrapper {
+  margin-bottom: 16px;
+}
+
+.counter-value {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: white;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.stat-description {
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .stats-counter-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .stats-counter-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-counter-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .counter-value {
+    font-size: 2.5rem;
+  }
+}

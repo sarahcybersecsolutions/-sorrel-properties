@@ -1,0 +1,290 @@
+.admin-dashboard {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.admin-header {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.admin-header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-header h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.btn-logout {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 10px 24px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: white;
+}
+
+.admin-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 100px 30px 30px;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+}
+
+.admin-sidebar {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.sidebar-btn {
+  width: 100%;
+  padding: 16px;
+  background: transparent;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.sidebar-btn:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.sidebar-btn.active {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.admin-main {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+  background: #dcfce7;
+  color: #166534;
+  padding: 16px 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-left: 4px solid #22c55e;
+}
+
+.add-property-form h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.form-row:nth-child(3) {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: 14px;
+  border: 3px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.form-group small {
+  color: #64748b;
+  margin-top: 6px;
+  font-size: 0.85rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+}
+
+.properties-list h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.properties-grid-admin {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.property-card-admin {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f1f5f9;
+  transition: all 0.3s ease;
+}
+
+.property-card-admin:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.property-card-admin img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.property-card-admin .property-info {
+  padding: 20px;
+}
+
+.property-card-admin h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.property-card-admin p {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.property-card-admin .price {
+  color: #3b82f6;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+.property-card-admin .badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #f1f5f9;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.property-card-admin .badge.featured {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: white;
+}
+
+@media (max-width: 968px) {
+  .admin-container {
+    grid-template-columns: 1fr;
+    padding: 100px 20px 20px;
+  }
+  
+  .admin-sidebar {
+    position: static;
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+  }
+  
+  .sidebar-btn {
+    white-space: nowrap;
+    margin-bottom: 0;
+  }
+  
+  .form-row,
+  .form-row:nth-child(3) {
+    grid-template-columns: 1fr;
+  }
+}

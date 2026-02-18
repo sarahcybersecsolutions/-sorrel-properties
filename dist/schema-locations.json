@@ -1,0 +1,155 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://sorrelproperties.com/#westlands-agent",
+      "name": "Sorrel Properties - Westlands",
+      "description": "Premium apartments and properties for sale in Westlands, Nairobi. Luxury living in the heart of Nairobi's business district.",
+      "url": "https://sorrelproperties.com/properties?location=westlands",
+      "telephone": "+254787855213",
+      "email": "info.sorrelproperties@gmail.com",
+      "areaServed": {
+        "@type": "City",
+        "name": "Westlands",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Nairobi"
+        }
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Westlands",
+        "addressRegion": "Nairobi",
+        "addressCountry": "KE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -1.2682,
+        "longitude": 36.8112
+      },
+      "priceRange": "$$$$",
+      "openingHours": ["Mo-Fr 09:00-18:00", "Sa 10:00-16:00"]
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://sorrelproperties.com/#riverside-agent",
+      "name": "Sorrel Properties - Riverside",
+      "description": "Exclusive apartments and homes for sale in Riverside, Nairobi. Serene riverside living with modern amenities.",
+      "url": "https://sorrelproperties.com/properties?location=riverside",
+      "telephone": "+254787855213",
+      "email": "info.sorrelproperties@gmail.com",
+      "areaServed": {
+        "@type": "City",
+        "name": "Riverside",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Nairobi"
+        }
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Riverside",
+        "addressRegion": "Nairobi",
+        "addressCountry": "KE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -1.2650,
+        "longitude": 36.8050
+      },
+      "priceRange": "$$$$",
+      "openingHours": ["Mo-Fr 09:00-18:00", "Sa 10:00-16:00"]
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://sorrelproperties.com/#kilimani-agent",
+      "name": "Sorrel Properties - Kilimani",
+      "description": "Luxury apartments and properties for sale in Kilimani, Nairobi. The most sought-after residential area with excellent amenities.",
+      "url": "https://sorrelproperties.com/properties?location=kilimani",
+      "telephone": "+254787855213",
+      "email": "info.sorrelproperties@gmail.com",
+      "areaServed": {
+        "@type": "City",
+        "name": "Kilimani",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Nairobi"
+        }
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kilimani",
+        "addressRegion": "Nairobi",
+        "addressCountry": "KE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -1.2890,
+        "longitude": 36.7830
+      },
+      "priceRange": "$$$$",
+      "openingHours": ["Mo-Fr 09:00-18:00", "Sa 10:00-16:00"]
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://sorrelproperties.com/#kileleshwa-agent",
+      "name": "Sorrel Properties - Kileleshwa",
+      "description": "Beautiful homes and apartments for sale in Kileleshwa, Nairobi. Peaceful residential neighborhood with great schools and shopping.",
+      "url": "https://sorrelproperties.com/properties?location=kileleshwa",
+      "telephone": "+254787855213",
+      "email": "info.sorrelproperties@gmail.com",
+      "areaServed": {
+        "@type": "City",
+        "name": "Kileleshwa",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Nairobi"
+        }
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kileleshwa",
+        "addressRegion": "Nairobi",
+        "addressCountry": "KE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -1.2750,
+        "longitude": 36.7900
+      },
+      "priceRange": "$$$",
+      "openingHours": ["Mo-Fr 09:00-18:00", "Sa 10:00-16:00"]
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://sorrelproperties.com/#lavington-agent",
+      "name": "Sorrel Properties - Lavington",
+      "description": "Prestigious properties and apartments for sale in Lavington, Nairobi. Upscale neighborhood with excellent security and amenities.",
+      "url": "https://sorrelproperties.com/properties?location=lavington",
+      "telephone": "+254787855213",
+      "email": "info.sorrelproperties@gmail.com",
+      "areaServed": {
+        "@type": "City",
+        "name": "Lavington",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Nairobi"
+        }
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lavington",
+        "addressRegion": "Nairobi",
+        "addressCountry": "KE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -1.2780,
+        "longitude": 36.7700
+      },
+      "priceRange": "$$$$",
+      "openingHours": ["Mo-Fr 09:00-18:00", "Sa 10:00-16:00"]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Place",
+        "name": "Westlands",
+        "description": "Apartments and properties for sale in Westlands, Nairobi. Business hub with modern high-rises and excellent amenities.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Westlands",
+          "addressRegion": "Nairobi",
+          "addressCountry": "KE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -1.2682,
+          "longitude": 36.8112
+        },
+        "containsPlace": [
+          {
+            "@type": "Residence",
+            "name": "Westlands Apartments",
+            "description": "Modern apartments for sale in Westlands"
+          },
+          {
+            "@type": "Residence",
+            "name": "Westlands Office Space",
+            "description": "Commercial properties for sale"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Place",
+        "name": "Riverside",
+        "description": "Exclusive apartments for sale in Riverside, Nairobi. Serene living near the Nairobi River with luxury amenities.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Riverside",
+          "addressRegion": "Nairobi",
+          "addressCountry": "KE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -1.2650,
+          "longitude": 36.8050
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Place",
+        "name": "Kilimani",
+        "description": "Luxury apartments and homes for sale in Kilimani, Nairobi. Most desirable neighborhood with international schools and shopping.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kilimani",
+          "addressRegion": "Nairobi",
+          "addressCountry": "KE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -1.2890,
+          "longitude": 36.7830
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Place",
+        "name": "Kileleshwa",
+        "description": "Family homes and apartments for sale in Kileleshwa, Nairobi. Peaceful residential area with excellent schools and parks.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kileleshwa",
+          "addressRegion": "Nairobi",
+          "addressCountry": "KE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -1.2750,
+          "longitude": 36.7900
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Place",
+        "name": "Lavington",
+        "description": "Prestigious properties for sale in Lavington, Nairobi. Upscale neighborhood with excellent security and green spaces.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lavington",
+          "addressRegion": "Nairobi",
+          "addressCountry": "KE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -1.2780,
+          "longitude": 36.7700
+        }
+      }
+    }
+  ],
+  "name": "Premium Properties in Nairobi - Westlands, Riverside, Kilimani, Kileleshwa, Lavington",
+  "description": "Find apartments and properties for sale in Nairobi's best neighborhoods: Westlands, Riverside, Kilimani, Kileleshwa, and Lavington. Sorrel Properties offers luxury homes in prime locations.",
+  "url": "https://sorrelproperties.com/properties",
+  "provider": {
+    "@type": "RealEstateAgent",
+    "name": "Sorrel Properties",
+    "telephone": "+254787855213"
+  }
+}
