@@ -71,19 +71,14 @@ const Home = () => {
         <div className="container">
           <div className="trust-grid">
             <div className="trust-content">
-              <div className="trust-badge">
-                <Award size={24} />
-                <span>Award Winning Agency</span>
-              </div>
               <h2 className="trust-title">
-                A Real Estate Agent<br />
-                <span className="highlight">You Can Trust</span>
+                Your Trusted<br />
+                <span className="highlight">Property Partner</span>
               </h2>
               <p className="trust-description">
-                Sorrel Properties is an award-winning real estate firm in Nairobi, Kenya, 
-                specializing in luxury homes, townhouses, and premium apartments. Our dedicated 
-                team provides seamless service to buyers, sellers, and investors looking for 
-                properties in Westlands, Riverside, Kilimani, Kileleshwa, and Lavington.
+                We help you find the perfect home in Nairobi's most desirable neighborhoods. 
+                Whether you're buying your first home, investing in property, or looking for a new place, 
+                our team is here to guide you through every step of the journey.
               </p>
               <div className="trust-buttons">
                 <Link to="/about" className="btn btn-primary">

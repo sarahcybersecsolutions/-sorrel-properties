@@ -44,13 +44,13 @@ const About = () => {
         <div className="container">
           <div className="about-hero-content">
             <h1 className="about-title">
-              Building Dreams,
-              <span className="gradient-text"> One Home at a Time</span>
+              Finding You the<br />
+              <span className="gradient-text">Perfect Place</span>
             </h1>
             <p className="about-description">
-              For over 8 years, Sorrel Properties has been at the forefront of the real estate 
-              industry, connecting thousands of families with their dream homes. Our commitment 
-              to excellence and customer satisfaction has made us a trusted name in the industry.
+              For over 8 years, we have been helping people in Nairobi find their ideal homes. 
+              From first-time buyers to experienced investors, our focus has always been on 
+              understanding what our clients need and delivering results that exceed expectations.
             </p>
           </div>
         </div>
@@ -76,12 +76,11 @@ const About = () => {
         <div className="container">
           <div className="mission-grid">
             <div className="mission-content">
-              <h2 className="section-title">Our Mission</h2>
+              <h2 className="section-title">What We Do</h2>
               <p className="mission-text">
-                At Sorrel Properties, our mission is to transform the real estate experience by 
-                combining innovative technology with personalized service. We believe everyone 
-                deserves a place to call home, and we're dedicated to making that dream a reality 
-                for each of our clients.
+                We make it easier for you to find the right property. Whether you're looking 
+                to buy your first home, invest in real estate, or find a rental property, 
+                our team is here to support you at every stage of the process.
               </p>
               <ul className="mission-list">
                 <li>

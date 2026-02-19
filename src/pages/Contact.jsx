@@ -28,7 +28,7 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <MapPin size={24} />,
-      title: "Visit Us",
+      title: "Our Location",
       details: ["Westlands Commercial Centre", "Nairobi, Kenya"]
     },
     {

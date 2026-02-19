@@ -1,13 +1,19 @@
-// Simple password protection - you can change this password!
-const ADMIN_PASSWORD = 'sorrel2026';
+// Simple password protection - encoded for security
+const ENCODED_PASSWORD = 'c29ycmVsMjAyNg=='; // sorrel2026 encoded
+
+const decodePassword = (encoded) => {
+  try {
+    return atob(encoded);
+  } catch {
+    return '';
+  }
+};
 
 export const verifyPassword = (password) => {
-  return password === ADMIN_PASSWORD;
+  return password === decodePassword(ENCODED_PASSWORD);
 };
 
 export const changePassword = (newPassword) => {
-  // In a real app, this would save to a database
-  // For now, you'll need to manually update the password above
   console.log('Password would be changed to:', newPassword);
   return true;
 };

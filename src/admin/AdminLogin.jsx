@@ -14,7 +14,7 @@ const AdminLogin = () => {
       setIsLoggedIn(true);
       setError('');
     } else {
-      setError('Wrong password! Try: sorrel2026');
+      setError('Wrong password!');
     }
   };
 
@@ -47,10 +47,6 @@ const AdminLogin = () => {
               Login
             </button>
           </form>
-          
-          <div className="password-hint">
-            <p>💡 Default password: <strong>sorrel2026</strong></p>
-          </div>
         </div>
       </div>
     </div>

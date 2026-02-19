@@ -37,10 +37,6 @@ const Hero = () => {
                 <div className="agent-details">
                   <h3>Sarah</h3>
                   <p className="agent-role">Lead Agent & Property Consultant</p>
-                  <div className="agent-badge">
-                    <Award size={16} />
-                    <span>Top Rated Agent</span>
-                  </div>
                 </div>
               </div>
               

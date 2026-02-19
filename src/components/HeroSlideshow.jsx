@@ -5,62 +5,62 @@ import './HeroSlideshow.css';
 const stunningImages = [
   {
     url: "https://farmanrealestate.com/storage/app/uploads/public/693/d7a/f95/693d7af95a582177344412.jpeg",
-    title: "Hephé Palace",
+    title: "Luxury Living",
     location: "Ring Road, Westlands",
     description: "Studio from Ksh 6.2M • 1BR from Ksh 7.5M • 2BR from Ksh 13.8M • 3BR+DSQ from Ksh 19.8M • Near Kingfisher Hotel",
     tag: "Ongoing",
     beds: 0,
     baths: 0,
     price: "From Ksh 6.2M",
-    completion: "2025"
+    completion: "Ongoing"
   },
   {
     url: "https://sydiarealty.com/wp-content/uploads/2025/01/Diamond-Bay-Residence-11-1600x790.jpg",
-    title: "Diamond Bay Residences",
+    title: "Modern Apartments",
     location: "Westlands Road, Westlands",
     description: "1BR from Ksh 8.7M • 2BR from Ksh 14.8M • 2 Blocks x 23 Floors • Smart Home Features",
     tag: "Ongoing",
     beds: 0,
     baths: 0,
     price: "From Ksh 8.7M",
-    completion: "Aug 2027"
+    completion: "Ongoing"
   },
   {
     url: "https://sydiarealty.com/wp-content/uploads/2025/01/Oak-Residency-8-1066x790.jpg",
-    title: "Oak West Residency",
+    title: "Urban Residence",
     location: "Mogotio Road, Westlands",
     description: "1BR from Ksh 8.1M • 2BR from Ksh 14.1M • 3BR from Ksh 16.9M • Rooftop Pool & Gym",
     tag: "Ongoing",
     beds: 0,
     baths: 0,
     price: "From Ksh 8.1M",
-    completion: "Q3 2027"
+    completion: "Ongoing"
   },
   {
     url: "https://sydiarealty.com/wp-content/uploads/2025/01/Diplomat-Residencies-2-1280x790.jpg",
-    title: "Diplomat Residences",
+    title: "Premium Suites",
     location: "Peponi Road, Westlands",
     description: "1BR from Ksh 6.1M • 2BR from Ksh 13.2M • Near Westgate & Sarit Centre • Hotel Lobby",
     tag: "Ongoing",
     beds: 0,
     baths: 0,
     price: "From Ksh 6.1M",
-    completion: "Dec 2027"
+    completion: "Ongoing"
   },
   {
     url: "https://sydiarealty.com/wp-content/uploads/2025/08/Galaxy-One-3-1080x790.jpg",
-    title: "Galaxy One",
+    title: "Skyline View",
     location: "Rhapta Road, Westlands",
     description: "1BR from Ksh 7M • 2BR from Ksh 11M • 3BR from Ksh 19M • 270° Views • Infinity Pool",
     tag: "Ongoing",
     beds: 0,
     baths: 0,
     price: "From Ksh 7M",
-    completion: "Dec 2027"
+    completion: "Ongoing"
   },
   {
     url: "https://sydiarealty.com/wp-content/uploads/2024/12/Marble-West-5-1280x790.jpg",
-    title: "Marble West",
+    title: "Ready for You",
     location: "Westlands, Nairobi",
     description: "From Ksh 7.2M • Ready for Occupation • Modern Finishes • Prime Location",
     tag: "Complete",
@@ -161,19 +161,6 @@ const HeroSlideshow = () => {
               <span className="completion-value">{currentImage.completion}</span>
             </div>
 
-            {/* Trust Indicators */}
-            <div className="trust-indicators animate-fade-in-delay">
-              <div className="trust-item">
-                <Award size={20} />
-                <span>Award Winning Agency</span>
-              </div>
-              <div className="trust-divider"></div>
-              <div className="trust-item">
-                <Star size={20} className="filled" />
-                <span>4.9/5 Rating</span>
-              </div>
-            </div>
-
             {/* Description */}
             <p className="stunning-description animate-fade-in-delay-2">
               {currentImage.description}
@@ -235,14 +222,7 @@ const HeroSlideshow = () => {
           >
             {index === currentIndex && <div className="dot-progress"></div>}
           </button>
-        ))}
-      </div>
-
-      {/* Slide Counter */}
-      <div className="slide-counter">
-        <span className="current">{String(currentIndex + 1).padStart(2, '0')}</span>
-        <span className="separator">/</span>
-        <span className="total">{String(stunningImages.length).padStart(2, '0')}</span>
+        )        )}
       </div>
     </section>
   );

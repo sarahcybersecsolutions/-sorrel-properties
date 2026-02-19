@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, FileText, Building, TrendingUp, Users, Award } from 'lucide-react';
+import { Home, FileText, Building, TrendingUp, Users, Shield } from 'lucide-react';
 import './Services.css';
 
 const Services = () => {
@@ -35,7 +35,7 @@ const Services = () => {
       color: "#f59e0b"
     },
     {
-      icon: <Award size={48} />,
+      icon: <Shield size={48} />,
       title: "Legal Consultation",
       description: "Comprehensive legal support for property transactions, ensuring smooth and secure documentation processes.",
       color: "#ef4444"
@@ -47,8 +47,8 @@ const Services = () => {
       <div className="container">
         <div className="services-header">
           <span className="section-badge">What We Offer</span>
-          <h2>Our Premium Services</h2>
-          <p>Comprehensive real estate solutions tailored to exceed your expectations</p>
+          <h2>How We Can Help You</h2>
+          <p>Find the right property with our dedicated support and expertise</p>
         </div>
         
         <div className="services-grid">

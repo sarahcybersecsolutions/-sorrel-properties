@@ -52,7 +52,6 @@ const PropertyDetail = () => {
             <button className="action-btn" aria-label="Add to favorites">
               <Heart size={20} />
             </button>
-            <span className="property-detail-price">{formatPrice(property.price)} <small>({currency})</small></span>
           </div>
         </div>
 

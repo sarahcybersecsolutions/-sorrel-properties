@@ -22,6 +22,15 @@ const PropertyCard = ({ property }) => {
 
   const badge = getCategoryBadge();
 
+  const getSaleRentBadge = () => {
+    if (property.forSaleOrRent === 'For Rent') {
+      return { label: 'For Rent', className: 'badge-rent' };
+    }
+    return { label: 'For Sale', className: 'badge-sale' };
+  };
+
+  const saleRentBadge = property.forSaleOrRent ? getSaleRentBadge() : null;
+
   return (
     <div className="property-card-gna">
       <div className="property-image-container-gna">
@@ -31,6 +40,11 @@ const PropertyCard = ({ property }) => {
           className="property-image-gna"
           loading="lazy"
         />
+        {saleRentBadge && (
+          <div className={`property-badge ${saleRentBadge.className}`} style={{ top: '10px', left: '10px' }}>
+            <span>{saleRentBadge.label}</span>
+          </div>
+        )}
         {badge && (
           <div className={`property-badge ${badge.className}`}>
             <badge.icon size={14} />
@@ -51,13 +65,7 @@ const PropertyCard = ({ property }) => {
       </div>
       
       <div className="property-content-gna">
-        <h3 className="property-title-gna">{property.title}</h3>
-        
-        <div className="property-price-gna">
-          <span className="price-label">Price</span>
-          <span className="price-value">{formatPrice(property.price)}</span>
-          <span className="price-currency">{currency}</span>
-        </div>
+        <h3 className="property-title-gna">{property.location}</h3>
         
         <div className="property-rooms-gna">
           <span className="room-item">
