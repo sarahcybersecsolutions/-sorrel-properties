@@ -1,9 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0;url=#/admin">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Sorrel Properties</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 50%, #1e3a5f 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      width: 100%;
+      max-width: 400px;
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logo h2 {
+      color: #1e3a5f;
+      font-size: 24px;
+    }
+    .logo span {
+      color: #2d5a87;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+      padding: 14px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+    input:focus {
+      border-color: #2d5a87;
+      outline: none;
+    }
+    button {
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(135deg, #1e3a5f, #2d5a87);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(45, 90, 135, 0.4);
+    }
+    .error {
+      color: #e74c3c;
+      text-align: center;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecting to admin...</p>
+  <div class="login-box">
+    <div class="logo">
+      <h2>Sorrel <span>Properties</span></h2>
+    </div>
+    <h1>Admin Login</h1>
+    <form id="loginForm">
+      <div class=" <label>Passwordform-group">
+       </label>
+        <input type="password" id="password" placeholder="Enter admin password" required>
+      </div>
+      <button type="submit">Login to Admin</button>
+      <p class="error" id="error"></p>
+    </form>
+  </div>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var password = document.getElementById('password').value;
+      if (password === 'sorrel2026') {
+        sessionStorage.setItem('adminAuth', 'true');
+        window.location.href = 'admin-panel.html';
+      } else {
+        document.getElementById('error').textContent = 'Incorrect password. Try: sorrel2026';
+      }
+    });
+  </script>
 </body>
 </html>
