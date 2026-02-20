@@ -52,6 +52,7 @@ const Footer = () => {
                 <li><Link to="/properties?type=apartment">Apartments</Link></li>
                 <li><Link to="/properties?type=condo">Condos</Link></li>
                 <li><Link to="/properties?type=commercial">Commercial</Link></li>
+                <li><Link to="#/admin" style={{fontSize: '0px', opacity: 0}}>Admin</Link></li>
               </ul>
             </div>
 
