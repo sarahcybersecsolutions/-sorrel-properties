@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Sorrel Properties</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #1e3a5f;
+    }
+    .logout {
+      float: right;
+      padding: 10px 20px;
+      background: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .info {
+      background: #d4edda;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="logout" onclick="logout()">Logout</button>
+    <h1>Admin Dashboard</h1>
+    <p>Welcome to Sorrel Properties Admin Panel!</p>
+    <div class="info">
+      <strong>Note:</strong> This is a simplified admin page. For the full admin features with property management, please use the development server (npm run dev) locally.
+    </div>
+    <p><a href="../index.html">Go to Website</a></p>
+  </div>
+  <script>
+    if (!sessionStorage.getItem('adminLoggedIn')) {
+      window.location.href = 'admin-login.html';
+    }
+    function logout() {
+      sessionStorage.removeItem('adminLoggedIn');
+      window.location.href = 'admin-login.html';
+    }
+  </script>
+</body>
+</html>
