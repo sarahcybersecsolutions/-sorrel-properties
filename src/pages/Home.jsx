@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import HeroSlideshow from '../components/HeroSlideshow';
 import Services from '../components/Services';
 import StatsCounter from '../components/StatsCounter';
@@ -7,6 +7,14 @@ import { ArrowRight, Award, HomeIcon, Building, MapPin } from 'lucide-react';
 import './Home.css';
 
 const Home = () => {
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    if (window.location.hash === '#gotoadmin') {
+      navigate('/admin');
+    }
+  }, [navigate]);
+  
   return (
     <div className="home">
       {/* Hero Slideshow - Rotating Luxury Images */}
