@@ -12,7 +12,7 @@ import './App.css';
 
 function AppContent() {
   const location = useLocation();
-  const isAdminPage = location.pathname === '/admin';
+  const isAdminPage = location.pathname === '/admin' || location.hash === '#/admin';
 
   return (
     <div className="app">
