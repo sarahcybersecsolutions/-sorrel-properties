@@ -112,6 +112,13 @@
     </script>
   </head>
   <body>
+    <script>
+      // Redirect to admin if URL has ?admin or #admin
+      const url = new URL(window.location.href);
+      if (url.searchParams.get('admin') === 'true' || window.location.hash === '#/admin') {
+        // Load React app which will handle routing
+      }
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="/protection.js"></script>
