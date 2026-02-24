@@ -1,16 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import HeroSlideshow from '../components/HeroSlideshow';
 import Services from '../components/Services';
 import StatsCounter from '../components/StatsCounter';
 import PropertyCard from '../components/PropertyCard';
 import { properties } from '../data/properties';
-import { ArrowRight, Award, HomeIcon, Building, MapPin } from 'lucide-react';
+import { ArrowRight, Award, HomeIcon, Building, MapPin, Lock, X } from 'lucide-react';
 import './Home.css';
 
 const Home = () => {
   const navigate = useNavigate();
   const featuredProperties = properties;
+  const [showLogin, setShowLogin] = useState(false);
+  const [loginError, setLoginError] = useState('');
+  const [loginPassword, setLoginPassword] = useState('');
   
   useEffect(() => {
     if (window.location.hash === '#gotoadmin') {
@@ -18,8 +21,52 @@ const Home = () => {
     }
   }, [navigate]);
   
+  const handleLogin = (e) => {
+    e.preventDefault();
+    if (loginPassword === 'sorrel2026') {
+      sessionStorage.setItem('adminAuth', 'true');
+      setShowLogin(false);
+      navigate('/admin');
+    } else {
+      setLoginError('Incorrect password. Try: sorrel2026');
+    }
+  };
+  
   return (
     <div className="home">
+      {/* Admin Login Modal */}
+      {showLogin && (
+        <div style={{
+          position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
+          background: 'rgba(0,0,0,0.8)', zIndex: 9999,
+          display: 'flex', alignItems: 'center', justifyContent: 'center'
+        }}>
+          <div style={{
+            background: 'white', padding: '40px', borderRadius: '15px',
+            maxWidth: '400px', width: '90%', textAlign: 'center', position: 'relative'
+          }}>
+            <button onClick={() => setShowLogin(false)} style={{
+              position: 'absolute', top: '15px', right: '15px',
+              background: 'none', border: 'none', cursor: 'pointer', fontSize: '20px'
+            }}><X size={24} /></button>
+            <h2 style={{color: '#1e3a5f', marginBottom: '20px'}}>Admin Login</h2>
+            <form onSubmit={handleLogin}>
+              <input type="password" placeholder="Enter password" value={loginPassword}
+                onChange={(e) => setLoginPassword(e.target.value)} style={{
+                  width: '100%', padding: '14px', borderRadius: '8px',
+                  border: '2px solid #ddd', fontSize: '16px', marginBottom: '15px'
+                }} />
+              <button type="submit" style={{
+                width: '100%', padding: '14px', background: '#1e3a5f',
+                color: 'white', border: 'none', borderRadius: '8px',
+                fontSize: '16px', fontWeight: 'bold', cursor: 'pointer'
+              }}>Login</button>
+              {loginError && <p style={{color: 'red', marginTop: '10px'}}>{loginError}</p>}
+            </form>
+          </div>
+        </div>
+      )}
+      
       {/* Hero Slideshow - Rotating Luxury Images */}
       <HeroSlideshow />
       
