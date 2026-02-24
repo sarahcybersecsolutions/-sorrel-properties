@@ -1,5 +1,5 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { HashRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import Properties from './pages/Properties';
@@ -12,7 +12,15 @@ import './App.css';
 
 function AppContent() {
   const location = useLocation();
-  const isAdminPage = location.pathname === '/admin' || location.hash === '#/admin';
+  const navigate = useNavigate();
+  const isAdminPage = location.pathname === '/admin' || location.hash === '#/admin' || location.hash === '#admin';
+  
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('admin') === '1') {
+      navigate('/admin', { replace: true });
+    }
+  }, [navigate]);
 
   return (
     <div className="app">

@@ -4,13 +4,13 @@ import HeroSlideshow from '../components/HeroSlideshow';
 import Services from '../components/Services';
 import StatsCounter from '../components/StatsCounter';
 import PropertyCard from '../components/PropertyCard';
-import properties from '../data/properties';
+import { properties } from '../data/properties';
 import { ArrowRight, Award, HomeIcon, Building, MapPin } from 'lucide-react';
 import './Home.css';
 
 const Home = () => {
   const navigate = useNavigate();
-  const featuredProperties = properties.slice(0, 6);
+  const featuredProperties = properties;
   
   useEffect(() => {
     if (window.location.hash === '#gotoadmin') {
@@ -40,7 +40,7 @@ const Home = () => {
           
           <div style={{textAlign: 'center'}}>
             <Link to="/properties" className="btn btn-primary" style={{display: 'inline-flex', alignItems: 'center', gap: '10px', padding: '15px 40px', fontSize: '16px'}}>
-              View More Properties
+              View More
               <ArrowRight size={20} />
             </Link>
           </div>
