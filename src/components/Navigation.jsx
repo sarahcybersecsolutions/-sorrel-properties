@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, MapPin, DollarSign, MessageCircle } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin, DollarSign, MessageCircle, Lock } from 'lucide-react';
 import { useCurrency } from '../contexts/CurrencyContext';
 import './Navigation.css';
 
@@ -103,6 +103,10 @@ const Navigation = () => {
             ))}
             <Link to="/contact" className="btn btn-nav-cta">
               Get Started
+            </Link>
+            <Link to="/?admin=1" className="nav-login-btn" title="Admin Login">
+              <Lock size={16} />
+              Login
             </Link>
           </div>
 

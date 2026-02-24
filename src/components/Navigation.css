@@ -277,3 +277,22 @@
     height: 50px;
   }
 }
+.nav-login-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #1e3a5f, #2d5a87);
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.nav-login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(30, 58, 95, 0.4);
+}
