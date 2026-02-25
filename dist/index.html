@@ -5,6 +5,17 @@
     <link rel="icon" type="image/png" href="./sorrel-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <script>
+      // Check for admin parameter on page load
+      window.addEventListener('DOMContentLoaded', function() {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('admin') === '1' || window.location.hash === '#/admin') {
+          // Store flag to show admin login after React loads
+          sessionStorage.setItem('showAdminLogin', 'true');
+        }
+      });
+    </script>
+    
     <!-- Primary Meta Tags -->
     <title>Sorrel Properties | Premium Real Estate in Nairobi, Kenya</title>
     <meta name="title" content="Sorrel Properties | Premium Real Estate in Nairobi, Kenya">
@@ -110,7 +121,7 @@
       ]
     }
     </script>
-    <script type="module" crossorigin src="./assets/index-hmpFfGfP.js"></script>
+    <script type="module" crossorigin src="./assets/index-Dh3AMddF.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-D97QcE8V.css">
   </head>
   <body>

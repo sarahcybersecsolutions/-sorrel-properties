@@ -16,11 +16,9 @@ const Home = () => {
   const [loginPassword, setLoginPassword] = useState('');
   
   useEffect(() => {
-    // Check if we need to show admin login
-    if (sessionStorage.getItem('showAdminLogin') === 'true') {
-      sessionStorage.removeItem('showAdminLogin');
-      setShowLogin(true);
-    }
+    // Always show login modal for now - for testing
+    setShowLogin(true);
+    
     if (window.location.hash === '#gotoadmin') {
       navigate('/admin');
     }
