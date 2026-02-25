@@ -6,50 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <script>
-      // Check for admin parameter on page load
       window.addEventListener('DOMContentLoaded', function() {
         var params = new URLSearchParams(window.location.search);
         if (params.get('admin') === '1' || window.location.hash === '#/admin') {
-          // Store flag to show admin login after React loads
           sessionStorage.setItem('showAdminLogin', 'true');
         }
       });
     </script>
     
     <!-- Primary Meta Tags -->
-    <title>Sorrel Properties | Premium Real Estate in Nairobi, Kenya</title>
-    <meta name="title" content="Sorrel Properties | Premium Real Estate in Nairobi, Kenya">
-    <meta name="description" content="Discover premium apartments and real estate properties in Nairobi, Kenya. Sorrel Properties offers studio, 1, 2, and 3-bedroom apartments in Westlands, Kilimani, and Kileleshwa. View ongoing and completed projects.">
-    <meta name="keywords" content="real estate, property, apartments, Nairobi, Kenya, Westlands, Kilimani, Kileleshwa, studio apartment, 1 bedroom, 2 bedroom, 3 bedroom, property for sale, ongoing projects, completed projects, Sorrel Properties">
+    <title>Sorrel Properties | Best Real Estate Agency in Westlands, Nairobi Kenya | Buy, Sell & Rent Properties</title>
+    <meta name="title" content="Sorrel Properties | Best Real Estate Agency in Westlands, Nairobi Kenya | Buy, Sell & Rent Properties">
+    <meta name="description" content="Sorrel Properties - Top real estate agency in Nairobi, Kenya. Find luxury apartments, villas, townhouses for sale and rent in Westlands, Kilimani, Kileleshwa, Karen, Lavington. Studio, 1, 2, 3 bedroom properties. Call +254 787 855213">
+    <meta name="keywords" content="Sorrel Properties, real estate Nairobi, property for sale Westlands, apartments for rent Kilimani, luxury homes Kenya, property agent Nairobi, buy house Karen, rent apartment Kileleshwa, studio apartment Nairobi, 2 bedroom flat Westlands, 3 bedroom villa Lavington, real estate agency Kenya, commercial property Nairobi, land for sale Nairobi, Sorrel Properties contact">
     <meta name="author" content="Sorrel Properties">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://sorrelproperties.com/">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sorrelproperties.com/">
-    <meta property="og:title" content="Sorrel Properties | Premium Real Estate in Nairobi, Kenya">
-    <meta property="og:description" content="Discover premium apartments and real estate properties in Nairobi, Kenya. View ongoing and completed projects in Westlands, Kilimani, and Kileleshwa.">
-    <meta property="og:image" content="https://sorrelproperties.com/sorrel-logo.png">
-    <meta property="og:site_name" content="Sorrel Properties">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sorrelproperties.com/">
-    <meta property="twitter:title" content="Sorrel Properties | Premium Real Estate in Nairobi, Kenya">
-    <meta property="twitter:description" content="Discover premium apartments and real estate properties in Nairobi, Kenya. View ongoing and completed projects in Westlands, Kilimani, and Kileleshwa.">
-    <meta property="twitter:image" content="https://sorrelproperties.com/sorrel-logo.png">
-
-    <!-- Geo Tags for Local SEO -->
-    <meta name="geo.region" content="KE">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="geo.region" content="KE-30">
     <meta name="geo.placename" content="Nairobi">
     <meta name="geo.position" content="-1.2921;36.8219">
     <meta name="ICBM" content="-1.2921, 36.8219">
+    <link rel="canonical" href="https://sorrelproperties.co.ke/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sorrelproperties.co.ke/">
+    <meta property="og:title" content="Sorrel Properties | Premium Real Estate in Nairobi, Kenya">
+    <meta property="og:description" content="Find your dream property in Nairobi's finest neighborhoods. Sorrel Properties offers luxury apartments, villas, and townhouses in Westlands, Kilimani, Kileleshwa, Karen, and Lavington.">
+    <meta property="og:image" content="https://sorrelproperties.co.ke/sorrel-logo.png">
+    <meta property="og:site_name" content="Sorrel Properties">
+    <meta property="og:locale" content="en_KE">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sorrelproperties.co.ke/">
+    <meta property="twitter:title" content="Sorrel Properties | Premium Real Estate in Nairobi, Kenya">
+    <meta property="twitter:description" content="Find your dream property in Nairobi's finest neighborhoods. Sorrel Properties offers luxury apartments, villas, and townhouses.">
 
     <!-- Theme Color -->
-    <meta name="theme-color" content="#3b82f6">
+    <meta name="theme-color" content="#1e3a5f">
 
-    <!-- Preconnect to external domains -->
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -61,75 +57,118 @@
       "@graph": [
         {
           "@type": "Organization",
-          "@id": "https://sorrelproperties.com/#organization",
+          "@id": "https://sorrelproperties.co.ke/#organization",
           "name": "Sorrel Properties",
-          "url": "https://sorrelproperties.com",
-          "logo": "https://sorrelproperties.com/sorrel-logo.png",
-          "description": "Your trusted partner in finding the perfect property in Nairobi, Kenya. We specialize in buying, selling, and renting premium properties.",
+          "url": "https://sorrelproperties.co.ke",
+          "logo": "https://sorrelproperties.co.ke/sorrel-logo.png",
+          "image": "https://sorrelproperties.co.ke/sorrel-logo.png",
+          "description": "Sorrel Properties is the leading real estate agency in Nairobi, Kenya. We specialize in luxury apartments, villas, townhouses, and commercial properties in Westlands, Kilimani, Kileleshwa, Karen, and Lavington.",
           "telephone": "+254787855213",
           "email": "info.sorrelproperties@gmail.com",
           "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Westlands Commercial Centre",
+            "addressLocality": "Nairobi",
+            "addressRegion": "Nairobi County",
+            "addressCountry": "KE",
+            "postalCode": "00100"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-1.2921",
+            "longitude": "36.8219"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          "priceRange": "$$$",
+          "areaServed": {
+            "@type": "Place",
+            "name": "Nairobi, Kenya"
+          },
+          "serviceType": ["Real Estate", "Property Management", "Buy Property", "Sell Property", "Rent Property"],
+          "sameAs": [
+            "https://www.facebook.com/sorrelproperties",
+            "https://www.instagram.com/sorrelproperties",
+            "https://wa.me/254787855213"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://sorrelproperties.co.ke/#website",
+          "url": "https://sorrelproperties.co.ke",
+          "name": "Sorrel Properties",
+          "publisher": {
+            "@id": "https://sorrelproperties.co.ke/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://sorrelproperties.co.ke/properties?search={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "RealEstateAgent",
+          "@id": "https://sorrelproperties.co.ke/#realestateagent",
+          "name": "Sorrel Properties",
+          "image": "https://sorrelproperties.co.ke/sorrel-logo.png",
+          "description": "Premium real estate agency in Nairobi, Kenya. Specializing in luxury homes, apartments, and commercial properties in Westlands, Kilimani, Kileleshwa, Karen, and Lavington.",
+          "url": "https://sorrelproperties.co.ke",
+          "telephone": "+254787855213",
+          "email": "info.sorrelproperties@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Westlands Commercial Centre",
             "addressLocality": "Nairobi",
             "addressRegion": "Nairobi County",
             "addressCountry": "KE"
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": -1.2921,
-            "longitude": 36.8219
+            "latitude": "-1.2921",
+            "longitude": "36.8219"
           },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "09:00",
-            "closes": "18:00"
-          }
+          "priceRange": "$$$",
+          "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-14:00"
         },
         {
-          "@type": "WebSite",
-          "@id": "https://sorrelproperties.com/#website",
-          "url": "https://sorrelproperties.com",
+          "@type": "LocalBusiness",
+          "@id": "https://sorrelproperties.co.ke/#business",
           "name": "Sorrel Properties",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://sorrelproperties.com/properties?search={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        },
-        {
-          "@type": "RealEstateAgent",
-          "@id": "https://sorrelproperties.com/#realestateagent",
-          "name": "Sorrel Properties",
-          "image": "https://sorrelproperties.com/sorrel-logo.png",
-          "description": "Premium real estate agency in Nairobi, Kenya. Specializing in luxury homes, apartments, and commercial properties in Westlands, Kilimani, and Kileleshwa.",
-          "url": "https://sorrelproperties.com",
+          "image": "https://sorrelproperties.co.ke/sorrel-logo.png",
+          "url": "https://sorrelproperties.co.ke",
           "telephone": "+254787855213",
           "email": "info.sorrelproperties@gmail.com",
           "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Westlands Commercial Centre, Office 101",
             "addressLocality": "Nairobi",
+            "addressRegion": "Nairobi County",
             "addressCountry": "KE"
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": -1.2921,
-            "longitude": 36.8219
+            "latitude": "-1.2921",
+            "longitude": "36.8219"
           },
-          "priceRange": "$$$"
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          }
         }
       ]
     }
     </script>
   </head>
   <body>
-    <script>
-      // Redirect to admin if URL has ?admin or #admin
-      const url = new URL(window.location.href);
-      if (url.searchParams.get('admin') === 'true' || window.location.hash === '#/admin') {
-        // Load React app which will handle routing
-      }
-    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="/protection.js"></script>

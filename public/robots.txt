@@ -1,13 +1,16 @@
-# https://www.robotstxt.org/robotstxt.html
+# Robots.txt for Sorrel Properties
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://sorrelproperties.com/sitemap.xml
+Sitemap: https://sorrelproperties.co.ke/sitemap.xml
 
-# Crawl-delay (optional, for polite crawling)
+# Crawl-delay
 Crawl-delay: 1
 
 # Disallow admin/private areas
 Disallow: /admin/
 Disallow: /api/
+
+# Host directive
+Host: https://sorrelproperties.co.ke
