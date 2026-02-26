@@ -733,5 +733,74 @@ CBD nearby
 KSh6,400,000 – KSh16,000,000 (Negotiable)`,
     status: 'complete',
     completionDate: 'Ready'
+  },
+
+  // Clermont Residence - Westlands (Ongoing)
+  {
+    id: 14,
+    title: 'Clermont Residence',
+    location: 'School Grove, Westlands, Nairobi',
+    price: 6440000,
+    type: 'apartment',
+    category: 'ongoing-projects',
+    beds: 1,
+    baths: 1,
+    sqft: 568,
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800',
+    description: `Welcome to Clermont Residence – an exclusive collection of luxury apartments for sale in Westlands, Nairobi's most prestigious neighborhood. Perfectly positioned near Sarit Centre on School Grove, this premier residential community offers residents an elevated urban lifestyle with convenient access to top business hubs, renowned schools, shopping centers, and public transportation.
+
+ONE BEDROOM APARTMENTS
+• 52.76 SQM – KES 6.44M
+• 63.45 SQM – KES 7.74M  
+• 70.28 SQM – KES 8.57M
+• 81.31 SQM – KES 9.92M
+
+TWO BEDROOM APARTMENTS
+• 104.51 SQM – KES 12.85M
+• 108.4 SQM – KES 13.86M
+• 109.83 SQM – KES 14.11M
+
+THREE BEDROOM APARTMENTS
+• 140.85 SQM – KES 19.84M
+• 153.51 SQM – KES 19.74M
+
+EXCEPTIONAL AMENITIES
+This modern apartment complex in Westlands features:
+• Reliable borehole water supply – never worry about water shortages
+• State-of-the-art fully equipped gym – stay fit without leaving home
+• High-speed elevators – quick access to all floors
+• 24/7 CCTV security surveillance – peace of mind for your family
+• Full backup generator – uninterrupted power supply
+• Children's play area – safe fun for kids
+• Heated swimming pool – enjoy year-round swimming
+• Generous parking spaces – ample room for residents
+• Steam sauna – relax and unwind
+• Serene Zen garden – peaceful retreat within the complex
+• On-site restaurant – convenient dining options
+• Stylish lounge area – perfect for social gatherings
+
+FLEXIBLE PAYMENT PLAN
+• Pay just 20% deposit to secure your dream home
+• Balance spread over 30 months with 0% interest
+• Early bird discounts available – act now!
+
+COMPLETION DATE: July 2027
+
+INVESTMENT OPPORTUNITY
+Clermont Residence offers:
+• Exceptional capital appreciation
+• Excellent rental income potential
+• Prime Westlands location near Sarit Centre
+• Modern finishes and premium amenities
+
+Don't miss this opportunity to own a luxury apartment in one of Nairobi's most sought-after locations. Contact Sorrel Properties today for more information!
+
+Phone: +254 787 877 213
+Email: info.sorrelproperties@gmail.com
+
+Keywords: apartment for sale Westlands Nairobi, property for sale Kilimani, luxury apartments Nairobi, buy apartment Westlands, 1 bedroom apartment Nairobi, 2 bedroom apartment Westlands, 3 bedroom apartment Kileleshwa, real estate Westlands Nairobi, investment property Kenya, rental apartments Nairobi`,
+
+    status: 'ongoing',
+    completionDate: 'July 2027'
   }
 ];
