@@ -16,9 +16,10 @@ const Home = () => {
   const [loginPassword, setLoginPassword] = useState('');
   
   useEffect(() => {
-    // Always show login modal for now - for testing
-    setShowLogin(true);
-    
+    if (sessionStorage.getItem('showAdminLogin') === 'true') {
+      sessionStorage.removeItem('showAdminLogin');
+      setShowLogin(true);
+    }
     if (window.location.hash === '#gotoadmin') {
       navigate('/admin');
     }
@@ -73,13 +74,28 @@ const Home = () => {
       {/* Hero Slideshow - Rotating Luxury Images */}
       <HeroSlideshow />
       
+      {/* SEO Keywords Banner */}
+      <section style={{background: '#1e3a5f', color: 'white', padding: '20px 0', textAlign: 'center'}}>
+        <div className="container">
+          <p style={{margin: 0, fontSize: '13px', lineHeight: '1.8'}}>
+            <strong>Property for sale Westlands Nairobi</strong> | 
+            <strong> Apartments for rent Kilimani</strong> | 
+            <strong> Luxury homes Karen</strong> | 
+            <strong> Buy house Lavington</strong> | 
+            <strong> Townhouse Kileleshwa</strong> | 
+            <strong> Studio apartment Nairobi</strong> |
+            <strong> Land for sale Nairobi</strong>
+          </p>
+        </div>
+      </section>
+      
       {/* Properties Listings Section */}
       <section className="properties-listing-section" style={{padding: '80px 0', background: '#f8f9fa'}}>
         <div className="container">
           <div className="section-header-gna" style={{textAlign: 'center', marginBottom: '50px'}}>
             <span className="section-badge">Our Listings</span>
-            <h2 className="section-title-gna">Featured Properties</h2>
-            <p className="section-subtitle-gna">Discover our exclusive collection of premium properties</p>
+            <h2 className="section-title-gna">Premium Properties for Sale in Westlands, Nairobi</h2>
+            <p className="section-subtitle-gna">Discover luxury apartments, villas, and townhouses in Nairobi's most sought-after locations</p>
           </div>
           
           <div className="properties-grid" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', marginBottom: '40px'}}>
