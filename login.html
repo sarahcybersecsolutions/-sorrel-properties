@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - Sorrel Properties</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .login-container {
+      background: white;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 25px 80px rgba(0,0,0,0.4);
+      width: 100%;
+      max-width: 450px;
+      text-align: center;
+    }
+    .logo {
+      margin-bottom: 30px;
+    }
+    .logo img {
+      max-width: 180px;
+    }
+    .logo h2 {
+      color: #1e3a5f;
+      font-size: 22px;
+      margin-top: 15px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 30px;
+    }
+    input {
+      width: 100%;
+      padding: 16px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      transition: border-color 0.3s;
+    }
+    input:focus {
+      border-color: #2d5a87;
+      outline: none;
+    }
+    button {
+      width: 100%;
+      padding: 18px;
+      background: linear-gradient(135deg, #1e3a5f, #2d5a87);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: translateY(-2px);
+    }
+    .error {
+      color: #e74c3c;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">
+      <h2>Sorrel Properties</h2>
+    </div>
+    <h1>Admin Login</h1>
+    <p class="subtitle">Enter your password to access the admin panel</p>
+    <form id="loginForm">
+      <input type="password" id="password" placeholder="Enter password" required>
+      <button type="submit">Login</button>
+      <p class="error" id="error"></p>
+    </form>
+  </div>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var password = document.getElementById('password').value;
+      if (password === 'sorrel2026') {
+        // Store session
+        sessionStorage.setItem('adminSession', 'true');
+        // Redirect to the React app admin page
+        window.location.href = window.location.origin + '/?admin=1#/admin';
+      } else {
+        document.getElementById('error').textContent = 'Incorrect password. Try: sorrel2026';
+      }
+    });
+  </script>
+</body>
+</html>
