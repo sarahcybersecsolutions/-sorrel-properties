@@ -1,5 +1,7 @@
 # Sorrel Properties - Real Estate Website
 
+Last Updated: March 2026
+
 A modern, responsive real estate website built with React and Vite. Features a beautiful design, property listings, search functionality, and contact forms.
 
 ![Real Estate Website](https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)
