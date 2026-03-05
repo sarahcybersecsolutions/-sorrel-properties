@@ -104,7 +104,7 @@ const Navigation = () => {
             <Link to="/contact" className="btn btn-nav-cta">
               Get Started
             </Link>
-            <Link to="/?admin=1" className="nav-login-btn" title="Admin Login">
+            <Link to="/admin" className="nav-login-btn" title="Admin Login">
               <Lock size={16} />
               Login
             </Link>
@@ -150,6 +150,14 @@ const Navigation = () => {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Get Started
+          </Link>
+
+          <Link
+            to="/admin"
+            className="mobile-nav-link"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            <Lock size={18} /> Admin Login
           </Link>
         </div>
       </nav>
